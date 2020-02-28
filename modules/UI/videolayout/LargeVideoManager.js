@@ -220,7 +220,7 @@ export default class LargeVideoManager {
             // do not show stream if video is muted
             // but we still should show watermark
             if (showAvatar) {
-                this.showWatermark(true);
+                this.showWatermark(false);
 
                 // If the intention of this switch is to show the avatar
                 // we need to make sure that the video is hidden
@@ -568,7 +568,7 @@ export default class LargeVideoManager {
                 // show companion icons/messages. It would be best if
                 // the container would be taking care of it by itself, but that
                 // is a bigger refactoring
-                this.showWatermark(true);
+                this.showWatermark(false);
 
                 // "avatar" and "video connection" can not be displayed both
                 // at the same time, but the latter is of higher priority and it

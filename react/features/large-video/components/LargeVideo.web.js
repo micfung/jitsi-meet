@@ -40,7 +40,7 @@ class LargeVideo extends Component<Props> {
                 </div>
                 <div id = 'etherpad' />
 
-                <Watermarks />
+                {/* <Watermarks /> */}
 
                 <div id = 'dominantSpeaker'>
                     <div className = 'dynamic-shadow' />
