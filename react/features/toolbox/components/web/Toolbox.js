@@ -1235,6 +1235,8 @@ class Toolbox extends Component<Props, State> {
                         visible = { this._shouldShowButton('hangup') } />
                     <VideoMuteButton
                         visible = { this._shouldShowButton('camera') } />
+                     <VideoBlurButton
+                        visible = { this._shouldShowButton('videobackgroundblur') && !this.props._screensharing } />
                 </div>
                 <div className = 'button-group-right'>
                     { buttonsRight.indexOf('localrecording') !== -1

@@ -1,12 +1,12 @@
 // @flow
 
-import React from 'react';
+// import React from 'react';
 
 import { createVideoBlurEvent, sendAnalytics } from '../../analytics';
 import { translate } from '../../base/i18n';
 import { IconBlurBackground } from '../../base/icons';
 import { connect } from '../../base/redux';
-import { AbstractButton, BetaTag } from '../../base/toolbox';
+import { AbstractButton } from '../../base/toolbox';
 import type { AbstractButtonProps } from '../../base/toolbox';
 
 import { toggleBlurEffect } from '../actions';
@@ -47,7 +47,7 @@ class VideoBlurButton extends AbstractButton<Props, *> {
      * @returns {ReactElement}
      */
     _getElementAfter() {
-        return <BetaTag />;
+        // return <BetaTag />;
     }
 
     /**
